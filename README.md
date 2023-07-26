@@ -27,7 +27,9 @@
 </p>
 
 
-**Shapefile_to_grid**
+## Title
+
+Shapefile_to_grid
 
 This code was used to grid the shapefiles in the following G10007 dataset at NSIDC (located here: https://nsidc.org/data/g10007/versions/1) to a 1/4 degree latitude/longitude grid to 30N.
 
