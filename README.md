@@ -1,11 +1,4 @@
 
-- [ ] Choose a license, rename it to `LICENSE`, and delete the unused one.
-    * The `NASA` license must be used for DAAC projects. The contract number is our
-      5-year DAAC contract and does not need to be changed or maintained in your
-      codebase unless work extends into a new 5-year contract period.
-    * The `GENERAL` license is for all other work.
-
-- [ ] Delete this section.
 
 <p align="center">
   <img alt="NSIDC logo" src="https://nsidc.org/themes/custom/nsidc/logo.svg" width="150" />
