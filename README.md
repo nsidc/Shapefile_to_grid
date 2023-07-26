@@ -1,18 +1,3 @@
-# Template instructions (delete me)
-
-- [ ] Replace the following variables in this README:
-    * `{title}`: The title of this application / repository.
-    * `{audience}`: The target audience of this repository.
-    * `{utility}`: Things this repository enables the audience to do.
-    * `{requirements}`: A bulleted list of pre-requisites.
-    * `{installation}`: Describe how to install this software, with platform-specific
-      instructions if necessary.
-    * `{usage}`: Describe how to use this software, with platform-specific instructions
-      if necessary.
-    * `{troubleshooting}`: Describe any tips or tricks in case the user runs into
-      problems.
-
-- [ ] In the "Level of Support" section, choose one LoS and delete the other.
 
 - [ ] Choose a license, rename it to `LICENSE`, and delete the unused one.
     * The `NASA` license must be used for DAAC projects. The contract number is our
@@ -27,11 +12,9 @@
 </p>
 
 
-## Title
+## Shapefile_to_grid
 
-Shapefile_to_grid
-
-This code was used to grid the shapefiles in the following G10007 dataset at NSIDC (located here: https://nsidc.org/data/g10007/versions/1) to a 1/4 degree latitude/longitude grid to 30N.
+This code was used to grid the shapefiles in the following G10007 dataset at NSIDC (located here: https://nsidc.org/data/g10007/versions/1) to a 1/4 degree latitude/longitude grid to 30N. The code contains items very specific to this project (i.e. grid boundaries, flags for the data).
 
 ## Level of Support
 
@@ -40,7 +23,6 @@ This repository is not actively supported by NSIDC but we welcome issue submissi
 
 See the [LICENSE](LICENSE) for details on permissions and warranties. Please contact
 nsidc@nsidc.org for more information.
-
 
 ## Requirements
 
@@ -52,20 +34,15 @@ This code was run in Python version 3.9. The following modules were used:
   - shapely=2.0.0
   - pandas=1.5.1
 
-## Installation
-
-{installation}
-
-
 ## Usage
 
-{usage}
-
-
-## Troubleshooting
-
-{troubleshooting}
-
+- To run: python < main.py
+- The program is currently structured to list all shapefiles (i.e. all files with the .shp suffix) in a directory.
+- Each user will very likely need to change the following to their specific data:
+-    The values in the constants.py file to their specifications.
+-    The directory where their input data live (datadir in main.py)
+-    The directory and name of the file that contains the information for their final output grid (get_latlon function in constants.py)
+-    The directory and name for output data (outdir and outfile in main.py)
 
 ## Credit
 
