@@ -46,8 +46,13 @@ nsidc@nsidc.org for more information.
 
 ## Requirements
 
-{requirements}
-
+This code was run in Python version 3.9. The following modules were used:
+  - numpy=1.23.3
+  - netCDF4=1.6.2
+  - geopandas=0.12.1
+  - pyproj=3.4.1
+  - shapely=2.0.0
+  - pandas=1.5.1
 
 ## Installation
 
